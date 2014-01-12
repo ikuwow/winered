@@ -1,7 +1,7 @@
 <div id="header">
 	<div id="logos">
 		<h1>看護師の口コミを探すならナースのための口コミサイト【Winered】</h1>
-		<p><img src="img/winered_logo.png" width="250" alt="Wineredのロゴ"></p>
+        <p><img src="/<?php echo $basedir;?>/img/winered_logo.png" width="250" alt="Wineredのロゴ"></p>
 	</div>
 
 	<form action="./login" method="post" id="loginForm">
