@@ -29,20 +29,22 @@
     // このへんは出川が追加
 
     // TopController
-	Router::connect('/', array('controller' => 'top', 'action' => 'index'));
+	Router::connect('/', array('controller' => 'Top', 'action' => 'index'));
 
     // AreaController
-	Router::connect('/', array('controller' => 'area', 'action' => 'index'));
+	Router::connect('/area/', array('controller' => 'Area', 'action' => 'index'));
 
     // MypageController
-	Router::connect('/', array('controller' => 'mypage', 'action' => 'index'));
+	Router::connect('/mypage/', array('controller' => 'Mypage', 'action' => 'index'));
 
     // HospitalController
-	Router::connect('/', array('controller' => 'hospital', 'action' => 'index'));
+	Router::connect('/hospital/', array('controller' => 'Hospital', 'action' => 'index'));
+	Router::connect('/hospital/*', array('controller' => 'Hospital', 'action' => 'info'));
+
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
-	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+	// Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
