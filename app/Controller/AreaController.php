@@ -1,4 +1,4 @@
-<?php 
+<?php
 // AreaController
 
 App::uses('AppController', 'Controller');
