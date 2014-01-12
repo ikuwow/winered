@@ -1,4 +1,4 @@
-<?php 
+<?php
 // HospitalController.php
 
 App::uses('AppController', 'Controller');
