@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-</head>
-<body>
-    <?php foreach ($results as $data):?>
-    <table>
-        <tr>
-            <td>
-                <?php var_dump($data);?>
-            </td>
-        </tr>
-    </table>
-    <?php endforeach;?>
-</body>
-</html>
+<div id= "hospitalinfo">
+	<div id="boxinfo">
+		<table>
+			<tbody>
+				<tr>
+					<?php echo $address;?>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<?php var_dump($results);?>
+<?php var_dump($address);?>
+</div>
