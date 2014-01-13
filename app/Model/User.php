@@ -4,16 +4,17 @@ App::uses('AppModel', 'Model');
 
 class User extends AppModel {
 
+	public $belongsTo = 'Hospital';
 	//とりあえず一件欲しい
 	public function getUserById($id){
 		$options = array(
 			'fields' => array(
 				'display_name',
 				'email',
-				'hospital_id'
+				'Hospital.company_name'
 			),
 			'conditions' => array(
-				'id' => $id
+				'User.id' => $id
 			)
 		);
 		return $this->find('first',$options);
