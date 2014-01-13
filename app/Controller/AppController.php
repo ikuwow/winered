@@ -45,7 +45,8 @@ class AppController extends Controller {
             'authError' => 'あなたのお名前とパスワードを入力して下さい。',
         )
     );
-    
+
+    public $me=array();
 
     // basedirの設定
     private $basedir;
