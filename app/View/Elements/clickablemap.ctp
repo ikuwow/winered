@@ -1,0 +1,51 @@
+
+<img src="/<?php echo $basedir;?>/img/map.jpg" alt="" usemap="#map1389541675852">
+<map id="map1389541675852" name="map1389541675852">
+<area shape="rect" coords="555,6,694,122" title="北海道" alt="" href="/<?php echo $basedir;?>/area/1" target="_self">
+<area shape="rect" coords="554,139,671,171" title="青森県" alt="" href="/<?php echo $basedir;?>/area/2" target="_self">
+<area shape="rect" coords="554,178,621,209" title="" alt="" href="/<?php echo $basedir;?>/area/5" target="_self">
+<area shape="rect" coords="627,178,670,209" title="" alt="" href="/<?php echo $basedir;?>/area/3" target="_self">
+<area shape="rect" coords="554,215,622,248" title="" alt="" href="/<?php echo $basedir;?>/area/6" target="_self">
+<area shape="rect" coords="627,215,671,248" title="" alt="" href="/<?php echo $basedir;?>/area/4" target="_self">
+<area shape="rect" coords="555,255,670,286" title="" alt="" href="/<?php echo $basedir;?>/area/7" target="_self">
+<area shape="rect" coords="556,293,622,324" title="" alt="" href="/<?php echo $basedir;?>/area/10" target="_self">
+<area shape="rect" coords="628,294,671,324" title="" alt="" href="/<?php echo $basedir;?>/area/11" target="_self">
+<area shape="rect" coords="555,332,622,363" title="" alt="" href="/<?php echo $basedir;?>/area/11" target="_self">
+<area shape="rect" coords="627,330,670,363" title="" alt="" href="/<?php echo $basedir;?>/area/8" target="_self">
+<area shape="rect" coords="628,369,671,440" title="" alt="" href="/<?php echo $basedir;?>/area/12" target="_self">
+<area shape="rect" coords="555,369,622,402" title="" alt="" href="/<?php echo $basedir;?>/area/13" target="_self">
+<area shape="rect" coords="554,407,621,440" title="" alt="" href="/<?php echo $basedir;?>/area/14" target="_self">
+<area shape="rect" coords="505,254,550,288" title="" alt="" href="/<?php echo $basedir;?>/area/15" target="_self">
+<area shape="rect" coords="505,293,549,363" title="" alt="" href="/<?php echo $basedir;?>/area/20" target="_self">
+<area shape="rect" coords="505,370,549,401" title="" alt="" href="/<?php echo $basedir;?>/area/19" target="_self">
+<area shape="rect" coords="507,408,549,440" title="" alt="" href="/<?php echo $basedir;?>/area/22" target="_self">
+<area shape="rect" coords="456,254,500,286" title="" alt="" href="/<?php echo $basedir;?>/area/16" target="_self">
+<area shape="rect" coords="457,294,500,362" title="" alt="" href="/<?php echo $basedir;?>/area/21" target="_self">
+<area shape="rect" coords="458,370,498,402" title="" alt="" href="/<?php echo $basedir;?>/area/23" target="_self">
+<area shape="rect" coords="408,253,450,287" title="" alt="" href="/<?php echo $basedir;?>/area/17" target="_self">
+<area shape="rect" coords="408,292,450,324" title="" alt="" href="/<?php echo $basedir;?>/area/18" target="_self">
+<area shape="rect" coords="410,332,448,363" title="" alt="" href="/<?php echo $basedir;?>/area/25" target="_self">
+<area shape="rect" coords="407,366,452,402" title="" alt="" href="/<?php echo $basedir;?>/area/24" target="_self">
+<area shape="rect" coords="359,331,401,364" title="" alt="" href="/<?php echo $basedir;?>/area/26" target="_self">
+<area shape="rect" coords="357,369,401,401" title="" alt="" href="/<?php echo $basedir;?>/area/25" target="_self">
+<area shape="rect" coords="310,332,354,364" title="" alt="" href="/<?php echo $basedir;?>/area/28" target="_self">
+<area shape="rect" coords="310,371,353,402" title="" alt="" href="/<?php echo $basedir;?>/area/27" target="_self">
+<area shape="rect" coords="311,410,400,442" title="" alt="" href="/<?php echo $basedir;?>/area/30" target="_self">
+<area shape="rect" coords="261,332,304,364" title="" alt="" href="/<?php echo $basedir;?>/area/37" target="_self">
+<area shape="rect" coords="260,370,305,401" title="" alt="" href="/<?php echo $basedir;?>/area/33" target="_self">
+<area shape="rect" coords="247,417,289,448" title="" alt="" href="/<?php echo $basedir;?>/area/37" target="_self">
+<area shape="rect" coords="246,457,290,488" title="" alt="" href="/<?php echo $basedir;?>/area/36" target="_self">
+<area shape="rect" coords="212,330,256,363" title="" alt="" href="/<?php echo $basedir;?>/area/32" target="_self">
+<area shape="rect" coords="212,370,256,402" title="" alt="" href="/<?php echo $basedir;?>/area/34" target="_self">
+<area shape="rect" coords="198,418,239,447" title="" alt="" href="/<?php echo $basedir;?>/area/38" target="_self">
+<area shape="rect" coords="198,456,240,486" title="" alt="" href="/<?php echo $basedir;?>/area/39" target="_self">
+<area shape="rect" coords="162,329,207,401" title="" alt="" href="/<?php echo $basedir;?>/area/35" target="_self">
+<area shape="rect" coords="104,366,146,397" title="大分県" alt="" href="/<?php echo $basedir;?>/area/44" target="_self">
+<area shape="rect" coords="103,403,149,475" title="" alt="" href="/<?php echo $basedir;?>/area/45" target="_self">
+<area shape="rect" coords="54,366,98,399" title="" alt="" href="/<?php echo $basedir;?>/area/40" target="_self">
+<area shape="rect" coords="55,405,98,436" title="" alt="" href="/<?php echo $basedir;?>/area/43" target="_self">
+<area shape="rect" coords="5,365,50,398" title="佐賀県" alt="" href="/<?php echo $basedir;?>/area/41" target="_self">
+<area shape="rect" coords="4,404,49,437" title="長崎県" alt="" href="/<?php echo $basedir;?>/area/42" target="_self">
+<area shape="rect" coords="6,443,97,475" title="鹿児島" alt="" href="/<?php echo $basedir;?>/area/46" target="_self">
+<area shape="rect" coords="6,496,47,528" title="沖縄県" alt="沖縄県" href="/<?php echo $basedir;?>/area/47" target="_self">
+</map> 
