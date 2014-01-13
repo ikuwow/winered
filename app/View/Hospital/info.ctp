@@ -44,8 +44,6 @@
 						</form>';?>
 		<?php endforeach; ?>
 	</div>
-<?php var_dump($results);?>
-<?php var_dump($kuchikomi);?>
 </div>
 
 <script type="text/javascript">
