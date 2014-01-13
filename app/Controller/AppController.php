@@ -32,6 +32,11 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+    // public $me = $this->Auth->user();
+    // debug($this->Auth);
+    //$this->set('me',$this->Auth->user());
+    
+
     // basedirの設定
     //private $basedir='winered';
     private $basedir;
