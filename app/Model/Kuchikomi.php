@@ -5,7 +5,6 @@ App::uses('AppModel', 'Model');
 class Kuchikomi extends AppModel {
 
 	public $useTable = "kuchikomi";
-
 	public function getHistoryByUserId($id){
 		$options = array(
 			'fields' => array(
