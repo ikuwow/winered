@@ -33,6 +33,8 @@
 
     // AreaController
 	Router::connect('/area/', array('controller' => 'Area', 'action' => 'index'));
+    Router::connect('/area/:id', array('controller' => 'Area', 'action' => 'prefecture'));
+    Router::connect('/area/:id/*', array('controller' => 'Area', 'action' => 'wardorcity'));
 
     // MypageController
 	Router::connect('/mypage/', array('controller' => 'Mypage', 'action' => 'index'));
