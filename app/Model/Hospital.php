@@ -12,4 +12,16 @@ class Hospital extends AppModel {
         return $this->find('all',$options);
     }
 
+    public function getHospitalIdByName($hospital_name) {
+        $options = array(
+        	'fields' => array(
+        		'id'
+			),
+            'conditions' => array(
+                'hospital_name' => $hospital_name
+            )
+        );
+        return $this->find('first',$options);
+    }
+
 }
