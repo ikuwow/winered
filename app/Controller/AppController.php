@@ -38,7 +38,6 @@ class AppController extends Controller {
     
 
     // basedirの設定
-    //private $basedir='winered';
     private $basedir;
 
     private function _getBaseDir() {
