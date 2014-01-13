@@ -36,11 +36,11 @@ class AppController extends Controller {
         'Session',
         'Auth' => array(
             //ログイン後の移動先
-            'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+            'loginRedirect' => array('controller' => 'top', 'action' => 'index'),
             //ログアウ後の移動先
-            'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
+            'logoutRedirect' => array('controller' => 'top', 'action' => 'index'),
             //ログインページのパス
-            'loginAction' => array('controller' => 'users', 'action' => 'login'),
+            'loginAction' => array('controller' => 'top', 'action' => 'index'),
             //未ログイン時のメッセージ
             'authError' => 'あなたのお名前とパスワードを入力して下さい。',
         )
@@ -59,8 +59,8 @@ class AppController extends Controller {
     function beforeFilter() {
         $this->basedir = $this->_getBaseDir();
        $this->set('basedir',$this->basedir);
-        $this->set('userinfo', $this->Auth->user());
-        debug($this->Auth->user());
+        $this->set('me', $this->Auth->user());
+        // debug($this->Auth->user());
         $this->Auth->allow();
     }
 

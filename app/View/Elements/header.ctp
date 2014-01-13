@@ -6,14 +6,16 @@
 
     <form action="/<?php echo $basedir;?>/users/login" method="post" id="loginForm">
     <p id="registerFlow">新規登録は<a href="/<?php echo $basedir;?>/users/signup">こちら</a></p>
+
+
+<!-- ログインフォーム -->
+<?php echo $this->Session->flash('auth'); ?>
+<?php echo $this->Form->create('User', array('url' => 'login')); ?>
 		<div id="emailWrap">
-			ユーザー名<br>
-			<input type="text" name="username" id="username">
+<?php echo $this->Form->input('username', array('label' => 'ユーザ名')); ?>
 		</div>
 		<div id="passwordWrap">
-			パスワード<br>
-			<input type="password" name="password" id="password">
+<?php echo $this->Form->input('password', array('label' => 'パスワード')); ?>
 		</div>
-		<input type="submit" value="login" name="send" id="send">
-	</form>
+<?php echo $this->Form->end('ログイン'); ?>
 </div>
