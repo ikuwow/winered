@@ -28,10 +28,27 @@ class HospitalController extends AppController
 
     	$kuchikomi = $this->Kuchikomi->getKuchikomiByHospitalId($id);
     	$this->set('kuchikomi',$kuchikomi);
+    	$reply_array = array();
+    	foreach($kuchikomi as $key => $parent){
+    		$parent_id = $parent['Kuchikomi']['id'];
+    		$reply = $this->Kuchikomi->getReplyByParentId($id,$parent_id);
+    		array_push($reply_array, $reply);
+    	}
+    	$this->set('reply_array', $reply_array);
 
     	if($this->request->isPost()){
-    		$discription = $this->request->data['kuchikomi'];
-    		$this->Kuchikomi->addKuchikomi(1,$id,$discription);
+    		if(empty($this->request->data['kuchikomi']) && empty($this->request->data['reply'])){
+    		}
+    		else if(empty($this->request->data['reply'])){
+    			$discription = $this->request->data['kuchikomi'];
+    			$this->Kuchikomi->addKuchikomi($me['id'],$id,$discription);
+    			$this->redirect('/hospital/'.$id);
+    		}
+    		else if(empty($this->request->data['kuchikomi'])){
+    			$discription = $this->request->data['reply'];
+    			$parent_id = $this->request->data['parent_id'] + 1;
+    			$this->Kuchikomi->addReply($me['id'],$id,$discription,$parent_id);
+    		}
     	}
     }
 }
