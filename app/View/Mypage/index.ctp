@@ -1,16 +1,16 @@
 <div id="userMenu">
 	<h2>マイページ</h2>
-	<?php echo $user['User']['display_name'] ?>
+	<?php echo $user['User']['user_name'] ?>
 	<ul>
 		<li>email： <?php echo $user['User']['email'] ?></li>
 		<li>password： 伏せてあります</li>
 		<li>勤務病院： <?php echo $user['Hospital']['hospital_name']  ?></li>
 	</ul>
 	<button id="editButton">編集する</button>
-	<form action="./edit" method="post" id="editForm">
+	<form action="edit" method="post" id="editForm">
 		<dl>
 			<dt>ユーザーネーム</dt>
-			<dd><input type="text" value="<?php echo $user['User']['display_name'] ?>" name="display_name" id="editDisplay_name"></dd>
+			<dd><input type="text" value="<?php echo $user['User']['user_name'] ?>" name="user_name" id="editDisplay_name"></dd>
 
 			<dt>email</dt>
 			<dd><input type="text" value="<?php echo $user['User']['email'] ?>" name="email" id="editEmail"></dd>
@@ -25,6 +25,19 @@
 		</dl>
 		<input type="submit" value="確定する">
 	</form>
+	<?php
+		$source = "";
+		foreach($hospital as $value){
+			 $source .= '"'.$value['Hospital']["hospital_name"].'",';
+		}
+	?>
+	<script>
+	$(function(){
+		$("#editHospital").autocomplete({
+			source: [ <?php  echo $source ?>]
+		});
+	});
+	</script>
 </div>
 <div id="history">
 	<h2>口コミ投稿履歴</h2>

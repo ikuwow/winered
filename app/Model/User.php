@@ -9,7 +9,7 @@ class User extends AppModel {
 	public function getUserById($id){
 		$options = array(
 			'fields' => array(
-				'display_name',
+				'user_name',
 				'email',
 				'Hospital.hospital_name'
 			),

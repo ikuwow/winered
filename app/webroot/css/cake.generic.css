@@ -146,4 +146,11 @@ div.history{
 	clear: left;
 }
 /* ▲▲ footer ▲▲ */
-
+.ui-menu-item{
+	max-width:200px;
+	background: #fff;
+	border: solid 1px #ffe5e5;
+}
+.ui-menu-item:hover{
+	background: #ccc;
+}
