@@ -25,6 +25,11 @@ class HospitalController extends AppController
     	$this->set('address',$address);
     	$this->set('station',$station);
     	$this->set('facility',$facility);
+
+    	if($this->request->isPost()){
+    		$discription = $this->request->data['kuchikomi'];
+    		$this->Hospital->addKuchikomi($me['id'],$id,$discription);
+    	}
     }
 }
 

@@ -20,6 +20,13 @@
 			</tbody>
 		</table>
 	</div>
+	<div id="kuchikomi">
+		<form method="post" action=" ">
+			<p>口コミを投稿する</p>
+			<input type="text" name="kuchikomi" id="kuchikomi"></input>
+			<input type="submit" value="投稿する"></input>
+		</form>
+	</div>
 <?php var_dump($results);?>
 <?php var_dump($address);?>
 </div>

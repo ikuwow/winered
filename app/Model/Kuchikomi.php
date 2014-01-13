@@ -8,15 +8,21 @@ class Kuchikomi extends AppModel {
 
 	public function getHistoryByUserId($id){
 		$options = array(
-			'fields' => array(
-				'hospital_id',
-				'discription',
-				'created'
-			),
 			'conditions' => array(
 				'user_id' => $id
 			)
 		);
 		return $this->find('all',$options);
+	}
+
+	public function getKuchikomiByHospitalId($id){
+		$options = array(
+			'conditions' => array(
+				'hospital_id' => $id
+			)
+		);
+	}
+
+	public function addKuchikomi($id,$hospital_id,$description){
 	}
 }
