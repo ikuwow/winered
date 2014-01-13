@@ -8,6 +8,7 @@ class MypageController extends AppController
     public $uses = array('User','Kuchikomi');
 
     public function index(){
+    	$this -> set("title_for_layout","マイページ | Winered");
     	$user = $this -> User -> getUserById('12345678');
     	$history = $this -> Kuchikomi -> getHistoryByUserId('12345678');
 
@@ -28,11 +29,6 @@ class MypageController extends AppController
     	$datas['id'] = $me;
     	$this -> User -> save($datas);
 
-
-    	$user = $this -> User -> getUserById('12345678');
-    	$history = $this -> Kuchikomi -> getHistoryByUserId('12345678');
-    	$this -> set("user",$user);
-    	$this -> set("history",$history);
     	$this -> redirect('./');
 
     }

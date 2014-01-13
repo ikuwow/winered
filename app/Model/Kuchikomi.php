@@ -5,10 +5,10 @@ App::uses('AppModel', 'Model');
 class Kuchikomi extends AppModel {
 
 	public $useTable = "kuchikomi";
-	public $belongsTo = array('User' =>
-			array('className' => 'User',
-				)
-			);
+	public $belongsTo = array(
+		'User' =>array('className' => 'User'),
+		'Hospital' => array('className' => 'Hospital')
+	);
 
 	public function getHistoryByUserId($id){
 		$options = array(
