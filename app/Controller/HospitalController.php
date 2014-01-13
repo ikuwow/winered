@@ -5,7 +5,7 @@ App::uses('AppController', 'Controller');
 class HospitalController extends AppController
 {
     public $name = 'Hospital';
-    public $uses = array('Hospital','Zip','Station','Facility');
+    public $uses = array('Hospital','Zip','Station','Facility','Kuchikomi');
 
     public function index(){
     	$this->redirect('/');
@@ -26,9 +26,12 @@ class HospitalController extends AppController
     	$this->set('station',$station);
     	$this->set('facility',$facility);
 
+    	$kuchikomi = $this->Kuchikomi->getKuchikomiByHospitalId($id);
+    	$this->set('kuchikomi',$kuchikomi);
+
     	if($this->request->isPost()){
     		$discription = $this->request->data['kuchikomi'];
-    		$this->Hospital->addKuchikomi($me['id'],$id,$discription);
+    		$this->Kuchikomi->addKuchikomi(1,$id,$discription);
     	}
     }
 }

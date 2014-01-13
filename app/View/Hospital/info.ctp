@@ -20,13 +20,19 @@
 			</tbody>
 		</table>
 	</div>
-	<div id="kuchikomi">
+	<div id="addKuchikomi">
 		<form method="post" action=" ">
 			<p>口コミを投稿する</p>
 			<input type="text" name="kuchikomi" id="kuchikomi"></input>
 			<input type="submit" value="投稿する"></input>
 		</form>
 	</div>
+	<div id="showKuchikomi">
+		<?php foreach ($kuchikomi as $key => $data):?>
+			<?php echo $data['Kuchikomi']['discription'];?>
+			<?php echo $data['User']['display_name'];?>
+		<?php endforeach; ?>
+	</div>
 <?php var_dump($results);?>
-<?php var_dump($address);?>
+<?php var_dump($kuchikomi);?>
 </div>
