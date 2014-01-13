@@ -147,5 +147,9 @@ div.history{
 	font-size: 0.7rem;
 	clear: left;
 }
+
+.reply_form{
+	display:none;
+}
 /* ▲▲ footer ▲▲ */
 

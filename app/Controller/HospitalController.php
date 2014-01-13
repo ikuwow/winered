@@ -31,7 +31,15 @@ class HospitalController extends AppController
 
     	if($this->request->isPost()){
     		$discription = $this->request->data['kuchikomi'];
-    		$this->Kuchikomi->addKuchikomi(1,$id,$discription);
+    		$reply = $this->request->data['reply'];
+    		if(empty($discrption) && empty($reply)){
+    		}
+    		else if(empty($reply)){
+    			$this->Kuchikomi->addKuchikomi(1,$id,$discription);
+    			$this->redirect('/hospital/'.$id);
+    		}
+    		else if(empty($discription)){
+    		}
     	}
     }
 }
