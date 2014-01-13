@@ -32,6 +32,22 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+
+    public $components = array(
+        'Session',
+        'Auth' => array(
+            //ログイン後の移動先
+            'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+            //ログアウ後の移動先
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
+            //ログインページのパス
+            'loginAction' => array('controller' => 'users', 'action' => 'login'),
+            //未ログイン時のメッセージ
+            'authError' => 'あなたのお名前とパスワードを入力して下さい。',
+        )
+    );
+    
+
     // basedirの設定
     //private $basedir='winered';
     private $basedir;
@@ -45,6 +61,9 @@ class AppController extends Controller {
     function beforeFilter() {
         $this->basedir = $this->_getBaseDir();
        $this->set('basedir',$this->basedir);
+        $this->set('userinfo', $this->Auth->user());
+        debug($this->Auth->user());
+        $this->Auth->allow();
     }
 
 }

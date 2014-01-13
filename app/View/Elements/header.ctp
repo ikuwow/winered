@@ -5,10 +5,11 @@
 	</div>
 
 	<form action="./login" method="post" id="loginForm">
-		<p id="registerFlow">新規登録は<a href="./register">こちら</a></p>
+    <p id="registerFlow">新規登録は<a href="/<?php echo $basedir;?>/users/signup">こちら</a></p>
+        <a href="/<?php echo $basedir;?>/users/logout">ログアウト</a>
 		<div id="emailWrap">
-			メールアドレス<br>
-			<input type="text" name="email" id="email">
+			ユーザー名<br>
+			<input type="text" name="username" id="username">
 		</div>
 		<div id="passwordWrap">
 			パスワード<br>
