@@ -11,7 +11,7 @@ class User extends AppModel {
 			'fields' => array(
 				'display_name',
 				'email',
-				'Hospital.company_name'
+				'Hospital.hospital_name'
 			),
 			'conditions' => array(
 				'User.id' => $id

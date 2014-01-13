@@ -4,7 +4,7 @@
 	<ul>
 		<li>email： <?php echo $user['User']['email'] ?></li>
 		<li>password： 伏せてあります</li>
-		<li>勤務病院： <?php echo $user['Hospital']['company_name']  ?></li>
+		<li>勤務病院： <?php echo $user['Hospital']['hospital_name']  ?></li>
 	</ul>
 	<button id="editButton">編集する</button>
 	<form action="./edit" method="post" id="editForm">
@@ -31,7 +31,7 @@
 		<?php
 		foreach ($history as $datas) {
 			echo '<div class="history">';
-			echo "<h3>{$datas['Kuchikomi']['hospital_id']}(病院)</h3>";
+			echo "<h3>{$datas['Hospital']['hospital_name']}</h3>";
 			echo "<p>{$datas['Kuchikomi']['created']}</p>";
 			echo "<p>{$datas['Kuchikomi']['discription']}</p>";
 			echo "</div>";
