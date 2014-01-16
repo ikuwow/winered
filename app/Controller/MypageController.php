@@ -8,6 +8,7 @@ class MypageController extends AppController
     public $uses = array('User','Kuchikomi','Hospital');
 
     public function index(){
+        $me = $this->Auth->user();
     	if(!isset($me)){
     		$this -> redirect('/login');
     	}

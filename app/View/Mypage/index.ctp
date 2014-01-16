@@ -1,6 +1,6 @@
 <div id="userMenu">
 	<h2>マイページ</h2>
-	<?php echo $user['User']['user_name'] ?>
+	<?php echo $user['User']['username'] ?>
 	<ul>
 		<li>email： <?php echo $user['User']['email'] ?></li>
 		<li>password： 伏せてあります</li>
@@ -10,7 +10,7 @@
 	<form action="edit" method="post" id="editForm">
 		<dl>
 			<dt>ユーザーネーム</dt>
-			<dd><input type="text" value="<?php echo $user['User']['user_name'] ?>" name="user_name" id="editDisplay_name"></dd>
+			<dd><input type="text" value="<?php echo $user['User']['username'] ?>" name="username" id="editDisplay_name"></dd>
 
 			<dt>email</dt>
 			<dd><input type="text" value="<?php echo $user['User']['email'] ?>" name="email" id="editEmail"></dd>

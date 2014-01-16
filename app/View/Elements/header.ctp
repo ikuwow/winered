@@ -8,6 +8,13 @@
     <p id="registerFlow">新規登録は<a href="/<?php echo $basedir;?>/users/signup">こちら</a></p>
 
 
+<?php if (isset($me)): ?>
+
+<?php echo 'ようこそ、'.$me['username'].'さん。';?>
+<?php echo $this->Html->link('ログアウト','/users/logout'); ?>
+
+<?php else: ?>
+
 <!-- ログインフォーム -->
 <?php echo $this->Session->flash('auth'); ?>
 <?php echo $this->Form->create('User', array('url' => 'login')); ?>
@@ -18,4 +25,6 @@
 <?php echo $this->Form->input('password', array('label' => 'パスワード')); ?>
 		</div>
 <?php echo $this->Form->end('ログイン'); ?>
+
+<?php endif; ?>
 </div>
