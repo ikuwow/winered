@@ -4,14 +4,9 @@ class UsersController extends AppController {
     public $uses = array('User');
     public $helpers = array('Html','Form');
 
-
-    public function index() { //使わない
-    }
-
     public function login() {
         if($this->request->is('post')) {
-            $tmp = $this->Auth->login();
-            if($tmp) {
+            if($this->Auth->login()) {
                 return $this->redirect($this->Auth->redirect());
             } else {
                 $this->Session->setFlash(__('ユーザ名かパスワードが違います'),

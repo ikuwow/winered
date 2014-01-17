@@ -32,8 +32,9 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+    /*
     public $components = array(
-        'Session',
+        'Session' => array(),
         'Auth' => array(
             //ログイン後の移動先
             'loginRedirect' => array('controller' => 'top', 'action' => 'index'),
@@ -45,6 +46,9 @@ class AppController extends Controller {
             'authError' => 'あなたのお名前とパスワードを入力して下さい。',
         )
     );
+     */
+
+    public $components = array('Auth','Session');
 
     public $me=array();
 

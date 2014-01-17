@@ -2,9 +2,9 @@
 // HospitalController.php
 
 App::uses('AppController', 'Controller');
-class HospitalController extends AppController
+class HospitalsController extends AppController
 {
-    public $name = 'Hospital';
+    public $name = 'Hospitals';
     public $uses = array('Hospital','Zip','Station','Facility','Kuchikomi');
 
     public function index(){
